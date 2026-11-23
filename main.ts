@@ -24,9 +24,9 @@ case 7:{if(sp<3)T(2);const x=S[sp-3],y=S[sp-2],z=S[sp-1];S[sp-3]=y;S[sp-2]=z;S[s
 case 16:{const y=pop(),x=pop();push(x+y);pc++;break;}
 case 17:{const y=pop(),x=pop();push(x-y);pc++;break;}
 case 18:{const y=pop(),x=pop();push(Math.imul(x,y));pc++;break;}
-case 19:{const y=pop(),x=pop();if(!y)T(4);push(x===-2147483648&&y===-1?x:(x/y)|0);pc++;break;}
-case 20:{const y=pop(),x=pop();if(!y)T(4);push(y===-1?0:x%y|0);pc++;break;}
-case 21:{const y=pop(),x=pop();if(!y)T(4);push(Math.floor((x>>>0)/(y>>>0))|0);pc++;break;}
+case 19:{const y=pop(),x=pop();if(!y)T(4);push((x/y)|0);pc++;break;}
+case 20:{const y=pop(),x=pop();if(!y)T(4);push(x%y|0);pc++;break;}
+case 21:{const y=pop(),x=pop();if(!y)T(4);push((x>>>0)/(y>>>0)|0);pc++;break;}
 case 22:{const y=pop(),x=pop();if(!y)T(4);push((x>>>0)%(y>>>0)|0);pc++;break;}
 case 23:push(-pop());pc++;break;
 case 24:{const y=pop(),x=pop();push(x&y);pc++;break;}
